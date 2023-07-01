@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@amcharts/amcharts5": "^5.3.17",
+    "jquery": "^3.7.0",
     "moment": "^2.29.4"
   }
 }

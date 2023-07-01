@@ -1,10 +1,13 @@
 import "./style.css"
+import BottomTable from "./bottom-table"
 import moment from 'moment'
 import * as am5 from '@amcharts/amcharts5'
 import * as am5xy from '@amcharts/amcharts5/xy'
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated"
 
-const root = am5.Root.new('bottom-table__chart')
+const bottom_table = new BottomTable()
+
+const root = am5.Root.new('chart')
 root.setThemes([
     am5themes_Animated.new(root)
 ])
@@ -77,7 +80,6 @@ chart.set("scrollbarX", am5.Scrollbar.new(root, {
 am5.net.load("https://assets.codepen.io/t-160/gantt_data.json").then(function (result) {
     var data = am5.JSONParser.parse(result.response);
     var categories = [];
-    console.log(data)
     am5.array.each(data, function (item) {
         if (categories.indexOf(item.category) == -1) {
             categories.push(item.category);
