@@ -1,0 +1,418 @@
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --grey-100: #F9FAFF;
+    --grey-200: #F7F7F7;
+    --grey-300: #DFDFDF;
+    --grey-400: #A9A8A8;
+    --grey-500: #5B5B5B;
+    --grey-600: #363636;
+    --blue-200: #0D51A0;
+    --green-200: #00CAA7;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Galano Grotesque Alt', sans-serif;
+}
+
+/* =========================================================
+======================== HEADER START ===================
+========================================================= */
+.header {
+    background-color: var(--grey-200);
+    border-bottom: 1px solid var(--grey-400);
+    min-width: 100%;
+    height: 50.86px;
+    padding: 9px 12px 9px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .btn-switcher {
+    display: flex;
+    align-items: center;
+    width: 182px;
+    height: 31px;
+    padding: 2px;
+    background-color: var(--grey-300);
+    border-radius: 50px;
+    box-shadow: inset 0 3px 1px #b4b4b4;
+}
+
+.header .btn-switcher button {
+    width: 95px;
+    height: 27px;
+    padding: 0 10px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 10px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .btn-switcher button.active {
+    background-color: var(--blue-200);
+}
+
+.header .header-logo {
+    width: 121px;
+    height: 32.86px;
+    border-radius: 50px;
+    background-color: var(--grey-300);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 3px 1px #b4b4b4;
+}
+
+.header .header-profile img {
+    border-radius: 50%;
+    cursor: pointer;
+    transition: ease-in-out .1s;
+}
+
+.header .header-profile img:hover {
+    outline: rgb(235, 88, 3) solid 3px;
+}
+
+/* =========================================================
+======================== HEADER END ===================
+========================================================= */
+
+
+/* =========================================================
+======================== MAIN BODY START ===================
+========================================================= */
+.main-body {
+    display: flex;
+    min-height: calc(100vh - 50.86px);
+    min-width: 100%;
+    background-color: lightblue;
+}
+
+.main-body .sidebar {
+    width: 340px;
+    min-height: 100%;
+    background-color: var(--grey-100);
+    border-right: 1px solid var(--grey-400);
+}
+
+.main-body .sidebar .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--grey-500);
+    padding: 10px 14px;
+}
+
+.main-body .sidebar .sidebar-header .sidebar-header-tooltip button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar .sidebar-section {
+    width: 100%;
+}
+
+.sidebar .sidebar-section .sidebar-section-header {
+    background-color: #ECEFFF;
+    border-top: 1px solid var(--grey-400);
+    border-bottom: 1px solid var(--grey-400);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    height: 38px;
+    color: var(--grey-500);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.sidebar .sidebar-section .sidebar-section-item {
+    max-height: calc(100vh - 70 vh);
+    overflow-y: auto;
+}
+
+.sidebar .sidebar-section .sidebar-section-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    height: 38px;
+    color: var(--grey-500);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.sidebar-section .sidebar-section__content,
+.sidebar-section .sidebar-section__tooltip {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.sidebar-section .sidebar-section__tooltip button {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--grey-500);
+    font-size: 10px;
+}
+
+.sidebar .sidebar-mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border-top: 1px solid var(--grey-400);
+}
+
+.sidebar-mode button {
+    background-color: var(--grey-100);
+    color: var(--grey-500);
+    border: none;
+    border-radius: 6px;
+    width: 160px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sidebar-mode button.active {
+    background-color: var(--blue-200);
+    color: white;
+}
+
+.main {
+    max-width: 100vw;
+    flex-grow: 1;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.main .date-header {
+    height: 35px;
+    width: 100%;
+    background-color: var(--grey-100);
+    display: flex;
+    border-bottom: 1px solid var(--grey-400);
+}
+
+.date-header #select-date {
+    min-width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    border-right: 1px solid var(--grey-400);
+    cursor: pointer;
+}
+
+.main .date-header .date-range {
+    display: flex;
+    align-items: center;
+}
+
+.date-range .date-range__item {
+    color: var(--grey-500);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bebas Neue', sans-serif;
+    width: 89px;
+    height: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    background: none;
+    border: none;
+    border-right: 1px solid var(--grey-400);
+    cursor: pointer;
+    justify-content: center;
+    padding-top: 1px;
+}
+
+.date-range__item.active {
+    color: var(--green-200);
+}
+
+.main #map {
+    flex-grow: 1;
+}
+
+.main #map iframe {
+    height: 100%;
+    width: 100%;
+}
+
+/* =========================================================
+======================== MAIN BODY END ===================
+========================================================= */
+
+
+/* =========================================================
+======================== BOTTOM TABLE START ===================
+========================================================= */
+
+#bottom-table {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: calc(100vw - 340px);
+    display: none;
+}
+
+#bottom-table.minimized {
+    display: block;
+}
+
+#bottom-table.fullscreen {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(67, 73, 74, .5);
+    display: block;
+}
+
+#bottom-table .bottom-table__buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 120px;
+}
+
+.bottom-table__buttons button {
+    background: none;
+    border: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    background-color: var(--grey-500);
+    width: 72px;
+    padding-top: 9px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#bottom-table .bottom-table__summary_info {
+    width: 100%;
+    height: 40px;
+    background-color: var(--grey-400);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.bottom-table__summary_info .summary_info__container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom-table__summary_info .summary_info__tooltip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.summary_info__tooltip button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#bottom-table .bottom-table__vehicle_info {
+    width: 100%;
+    height: 40px;
+    background-color: var(--grey-300);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.bottom-table__vehicle_info .vehicle_info__tooltip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vehicle_info__tooltip button {
+    background-color: var(--green-200);
+    color: white;
+    width: 158px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#bottom-table #bottom-table__chart {
+    width: 100%;
+    height: calc(289px + 39px);
+    background-color: var(--grey-200);
+}
+
+#bottom-table__chart.hide {
+    display: none;
+}
+
+/* =========================================================
+======================== BOTTOM TABLE END ===================
+========================================================= */
+
+
+
+
+/* =========================================================
+======================== KEYFRAMES START ===================
+========================================================= */
+
+@keyframes scroll-up {
+    0% {
+        bottom: -1;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+/* =========================================================
+======================== KEYFRAMES END ===================
+========================================================= */

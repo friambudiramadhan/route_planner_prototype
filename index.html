@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Planner</title>
+</head>
+
+<body>
+    <!-- ================================= header start ============================ -->
+    <div class="header">
+        <div class="btn-switcher">
+            <button type="button" id="btn_swicth_route_and_plan" class="active" title="Route & Plan">Route &
+                Plan</button>
+            <button type="button" id="btn_swicth_live_mode" class="" title="Live Mode">Live Mode</button>
+        </div>
+        <div class="header-logo">
+            <img src="./assets/images/easygo-logo.png" alt="EasyGo Logo" width="90">
+        </div>
+        <div class="header-profile">
+            <img src="./assets/images/profile-picture.jpg" alt="Profile Picture" width="30">
+        </div>
+    </div>
+    <!-- ================================= header end ============================ -->
+
+    <div class="main-body">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-header-title">
+                    <h2>Kota Bandung</h2>
+                    <p>RUNSHEET123</p>
+                </div>
+                <div class="sidebar-header-tooltip">
+                    <button>
+                        <img src="./assets/icons/gear.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-header">
+                    <div class="sidebar-section__content">
+                        <input type="checkbox">
+                        <img src="./assets/icons/lock.svg" alt="">
+                        <span>Runsheet</span>
+                    </div>
+                    <div class="sidebar-section__tooltip">
+                        <button>
+                            <img src="./assets/icons/gear.svg" alt="" width="16">
+                            <span>Setting</span>
+                        </button>
+                        <button>
+                            <img src="./assets/icons/add-button.svg" alt="" width="16">
+                            <span>Add</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="sidebar-section-item">
+                    <div class="sidebar-section-list-item">
+                        <div class="sidebar-section__content">
+                            <input type="checkbox">
+                            <img src="./assets/icons/lock.svg" alt="">
+                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                        </div>
+                        <div class="sidebar-section__tooltip">
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sidebar-section-list-item">
+                        <div class="sidebar-section__content">
+                            <input type="checkbox">
+                            <img src="./assets/icons/lock.svg" alt="">
+                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                        </div>
+                        <div class="sidebar-section__tooltip">
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sidebar-section-list-item">
+                        <div class="sidebar-section__content">
+                            <input type="checkbox">
+                            <img src="./assets/icons/lock.svg" alt="">
+                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                        </div>
+                        <div class="sidebar-section__tooltip">
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sidebar-section-list-item">
+                        <div class="sidebar-section__content">
+                            <input type="checkbox">
+                            <img src="./assets/icons/lock.svg" alt="">
+                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                        </div>
+                        <div class="sidebar-section__tooltip">
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-mode">
+                <button class="active">Car</button>
+                <button>Trip</button>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section-header">
+                    <div class="sidebar-section__content">
+                        <input type="checkbox">
+                        <img src="./assets/icons/lock.svg" alt="">
+                        <span>Runsheet</span>
+                    </div>
+                    <div class="sidebar-section__tooltip">
+                        <button>
+                            <img src="./assets/icons/gear.svg" alt="" width="16">
+                            <span>Setting</span>
+                        </button>
+                        <button>
+                            <img src="./assets/icons/add-button.svg" alt="" width="16">
+                            <span>Add</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="sidebar-section-item">
+                    <div class="sidebar-section-list-item">
+                        <div class="sidebar-section__content">
+                            <input type="checkbox">
+                            <img src="./assets/icons/lock.svg" alt="">
+                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                        </div>
+                        <div class="sidebar-section__tooltip">
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sidebar-section-list-item">
+                        <div class="sidebar-section__content">
+                            <input type="checkbox">
+                            <img src="./assets/icons/lock.svg" alt="">
+                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                        </div>
+                        <div class="sidebar-section__tooltip">
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sidebar-section-list-item">
+                        <div class="sidebar-section__content">
+                            <input type="checkbox">
+                            <img src="./assets/icons/lock.svg" alt="">
+                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                        </div>
+                        <div class="sidebar-section__tooltip">
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sidebar-section-list-item">
+                        <div class="sidebar-section__content">
+                            <input type="checkbox">
+                            <img src="./assets/icons/lock.svg" alt="">
+                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                        </div>
+                        <div class="sidebar-section__tooltip">
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sidebar-section-list-item">
+                        <div class="sidebar-section__content">
+                            <input type="checkbox">
+                            <img src="./assets/icons/lock.svg" alt="">
+                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                        </div>
+                        <div class="sidebar-section__tooltip">
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sidebar-section-list-item">
+                        <div class="sidebar-section__content">
+                            <input type="checkbox">
+                            <img src="./assets/icons/lock.svg" alt="">
+                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                        </div>
+                        <div class="sidebar-section__tooltip">
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="sidebar-section-list-item">
+                        <div class="sidebar-section__content">
+                            <input type="checkbox">
+                            <img src="./assets/icons/lock.svg" alt="">
+                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                        </div>
+                        <div class="sidebar-section__tooltip">
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="date-header">
+                <button id="select-date">
+                    <img src="./assets/icons/calendar.svg" alt="">
+                    <img src="./assets/icons/down-arrow.svg" alt="">
+                </button>
+                <div class="date-range">
+                    <button class="date-range__item active">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                    <button class="date-range__item">
+                        <span>THU</span>
+                        <span>22-MAY-23</span>
+                    </button>
+                </div>
+            </div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63466.94808875863!2d106.60162191227428!3d-6.1730118972532875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f8db97102f99%3A0x42a3b51ffb4d8e32!2sTanah%20Tinggi%20Station!5e0!3m2!1sen!2sid!4v1688135071809!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom-table" class="minimized">
+        <div class="bottom-table__buttons">
+            <button id="btn-timeline">
+                <span>TIMELINE</span>
+                <img src="./assets/icons/stats.svg" alt="">
+            </button>
+            <button>
+                <span id="btn-fleet">FLEET</span>
+                <img src="./assets/icons/bus.svg" alt="">
+            </button>
+        </div>
+        <div class="bottom-table__summary_info">
+            <div class="summary_info__container">
+                <span>45/45 Scheduled</span>
+                <span>1323 Working Mins</span>
+                <span>3213 Total Km</span>
+            </div>
+            <div class="summary_info__tooltip">
+                <button id="btn-detailed-route">
+                    <img src="./assets/icons/up-arrow.svg" alt="">
+                </button>
+                <button id="btn-fullscreen-route">
+                    <img src="./assets/icons/fullscreen.svg" alt="">
+                </button>
+                <button id="btn-minimize-route">
+                    <img src="./assets/icons/minimize.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="bottom-table__vehicle_info">
+            <span id="vehicle_used">5 Vehicles Used</span>
+            <div class="vehicle_info__tooltip">
+                <button id="btn-download-summary">
+                    <span>Download Summary</span>
+                    <img src="./assets/icons/download.svg" alt="">
+                </button>
+                <button id="btn-share-route">
+                    <span>Share Route</span>
+                    <img src="./assets/icons/share.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div id="bottom-table__chart" class="">
+
+        </div>
+    </div>
+
+    <script src='./dist/main.bundle.js'></script>
+</body>
+
+</html>
