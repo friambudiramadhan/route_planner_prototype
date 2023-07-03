@@ -3,7 +3,6 @@ import BottomTable from "./bottom-table"
 import moment from 'moment'
 import * as am5 from '@amcharts/amcharts5'
 import * as am5xy from '@amcharts/amcharts5/xy'
-import am5themes_Animated from "@amcharts/amcharts5/themes/Animated"
 
 const bottom_table = new BottomTable()
 
@@ -320,6 +319,7 @@ series.appear();
 chart.appear(1000, 100);
 // const root = am5.Root.new('chart')
 // root.setThemes([
+
 //     am5themes_Animated.new(root)
 // ])
 // root.dateFormatter.setAll({
@@ -411,3 +411,8 @@ chart.appear(1000, 100);
 
 // series.appear();
 // chart.appear(1000, 100);
+
+const onDropHandler = (e) => {
+    console.log(e)
+    alert('Halo')
+}

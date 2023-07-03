@@ -367,6 +367,52 @@
         </div>
     </div>
 
+    <div class="modal show" id="modal-trip">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header-content active" data-sequence="1">
+                    <div class="content-title">
+                        <span>Add Destination Point</span>
+                    </div>
+                    <div class="content-desc">
+                        <span>Create data of destinations point for completing daily activity</span>
+                    </div>
+                </div>
+                <div class="modal-header-tooltip">
+                    <button data-modal-action="close">Close</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="body-section active" data-sequence="1">
+                    <p>You can import orders from your Excel, CSV and tab-delimited file or add address manually. Having trouble <u>Learn How</u> to import orders or <u>download</u> our sample Excel file.</p>
+                    <div class="upload-container">
+                        <p style="font-size: 14px; font-weight: 500;">Upload File</p>
+                        <div class="upload-content" ondrop="onDropHandler(event)">
+                            <div>
+                                <img src="./assets/icons/XSL.svg" alt="">
+                                <p><b>Drag and Drop a csv - xls file</b></p>
+                            </div>
+                            <div>
+                                <p>Not sure how to format your file? Download a sample</p>
+                            </div>
+                            <div>
+                                <p>Or, select from your computer</p>
+                            </div>
+                        </div>
+                        <p>Paste addresses below, one per line</p>
+                        <textarea id="text-address" placeholder="ex : 1 DriverName PlateNumber PhoneNumber"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="footer-section active" data-sequence="1">
+                    <button class="button-outline" data-modal-action="close" class="">Close</button>
+                    <button class="button-full" data-modal-action="next" data-target-section="2">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src='./dist/main.bundle.js'></script>
 </body>
 
