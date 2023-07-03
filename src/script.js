@@ -1,10 +1,13 @@
 import "./style.css"
 import BottomTable from "./bottom-table"
+import Modal from './modal'
 import moment from 'moment'
+import $ from 'jquery'
 import * as am5 from '@amcharts/amcharts5'
 import * as am5xy from '@amcharts/amcharts5/xy'
 
 const bottom_table = new BottomTable()
+const modal_1 = new Modal('modal-trip')
 
 var root = am5.Root.new("chart");
 root.dateFormatter.setAll({
@@ -412,7 +415,13 @@ chart.appear(1000, 100);
 // series.appear();
 // chart.appear(1000, 100);
 
-const onDropHandler = (e) => {
-    console.log(e)
-    alert('Halo')
-}
+$('.btn-add').on('click', function (e) {
+    e.preventDefault()
+    modal_1.show()
+})
+
+$('button[data-modal-action="close"]').on('click', function (e) {
+    e.preventDefault()
+    const modal_parent = $(this).data('refference')
+    $(`${modal_parent}`).removeClass('show')
+})

@@ -49,7 +49,7 @@
                             <img src="./assets/icons/gear.svg" alt="" width="16">
                             <span>Setting</span>
                         </button>
-                        <button>
+                        <button class="btn-add">
                             <img src="./assets/icons/add-button.svg" alt="" width="16">
                             <span>Add</span>
                         </button>
@@ -134,7 +134,7 @@
                             <img src="./assets/icons/gear.svg" alt="" width="16">
                             <span>Setting</span>
                         </button>
-                        <button>
+                        <button class="btn-add">
                             <img src="./assets/icons/add-button.svg" alt="" width="16">
                             <span>Add</span>
                         </button>
@@ -367,7 +367,7 @@
         </div>
     </div>
 
-    <div class="modal show" id="modal-trip">
+    <div class="modal" id="modal-trip">
         <div class="modal-content">
             <div class="modal-header">
                 <div class="modal-header-content active" data-sequence="1">
@@ -387,7 +387,7 @@
                     </div>
                 </div>
                 <div class="modal-header-tooltip">
-                    <button data-modal-action="close">Close</button>
+                    <button data-modal-action="close" data-refference="#modal-trip">Close</button>
                 </div>
             </div>
             <div class="modal-body">
