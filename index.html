@@ -5,40 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Route Planner</title>
+    <link rel="stylesheet" href="./dist/style.bundle.css">
 </head>
 
 <body>
     <!-- ================================= header start ============================ -->
-    <div class="header">
-        <div class="btn-switcher">
-            <button type="button" id="btn_swicth_route_and_plan" class="active" title="Route & Plan">Route &
+    <div class="header flex justify-between items-center px-3 h-[50px] bg-grey-200 border-b border-b-grey-300">
+        <div class="bg-grey-300 flex p-1 rounded-full" style="box-shadow: inset 0 3px 4px #b4b4b4;">
+            <button type="button" id="btn_swicth_route_and_plan" class="font-semibold rounded-full px-3 py-0.5 [&.active]:bg-blue-500 text-grey-100 text-xs h-7 active" title="Route & Plan">Route &
                 Plan</button>
-            <button type="button" id="btn_swicth_live_mode" class="" title="Live Mode">Live Mode</button>
+            <button type="button" id="btn_swicth_live_mode" class="font-semibold rounded-full px-3 py-0.5 [&.active]:bg-blue-500 text-grey-100 text-xs h-7" title="Live Mode">Live Mode</button>
         </div>
-        <div class="header-logo">
+        <div class="header-logo w-32 flex flex-col items-center bg-grey-300 py-2 px-2 rounded-full" style="box-shadow: inset 0 3px 4px #b4b4b4;">
             <img src="./assets/images/easygo-logo.png" alt="EasyGo Logo" width="90">
         </div>
         <div class="header-profile">
-            <img src="./assets/images/profile-picture.jpg" alt="Profile Picture" width="30">
+            <img src="./assets/images/profile-picture.jpg" alt="Profile Picture" width="30" class="rounded-full">
         </div>
     </div>
     <!-- ================================= header end ============================ -->
 
-    <div class="main-body">
-        <div class="sidebar">
-            <div class="sidebar-header">
-                <div class="sidebar-header-title">
-                    <h2>Kota Bandung</h2>
-                    <p>RUNSHEET123</p>
+    <div class="main-body flex h-[calc(100vh-50px)]">
+        <div id="sidebar" class="bg-grey-100 min-w-[340px] border-r border-grey-300 text-grey-600">
+            <div class="p-[10px] flex items-center justify-between">
+                <div class="">
+                    <h2 class="text-xl font-bold">Kota Bandung</h2>
+                    <p class="text-sm">RUNSHEET123</p>
                 </div>
-                <div class="sidebar-header-tooltip">
-                    <button>
-                        <img src="./assets/icons/gear.svg" alt="">
-                    </button>
-                </div>
+                <button>
+                    <img src="./assets/icons/gear.svg" alt="">
+                </button>
             </div>
-            <div class="sidebar-section">
-                <div class="sidebar-section-header">
+            <div>
+                <div class="bg-blue-100">
                     <div class="sidebar-section__content">
                         <input type="checkbox">
                         <img src="./assets/icons/lock.svg" alt="">
@@ -315,7 +314,10 @@
                 </div>
             </div>
             <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63466.94808875863!2d106.60162191227428!3d-6.1730118972532875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f8db97102f99%3A0x42a3b51ffb4d8e32!2sTanah%20Tinggi%20Station!5e0!3m2!1sen!2sid!4v1688135071809!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63466.94808875863!2d106.60162191227428!3d-6.1730118972532875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f8db97102f99%3A0x42a3b51ffb4d8e32!2sTanah%20Tinggi%20Station!5e0!3m2!1sen!2sid!4v1688135071809!5m2!1sen!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -380,10 +382,10 @@
                 </div>
                 <div class="modal-header-content" data-sequence="2">
                     <div class="content-title">
-                        <span>Add Destination Point</span>
+                        <span>Detail Setup</span>
                     </div>
                     <div class="content-desc">
-                        <span>Create data of destinations point for completing daily activity</span>
+                        <span>Create data of your drivers for completing daily activity</span>
                     </div>
                 </div>
                 <div class="modal-header-tooltip">
@@ -392,7 +394,8 @@
             </div>
             <div class="modal-body">
                 <div class="body-section active" data-sequence="1">
-                    <p>You can import orders from your Excel, CSV and tab-delimited file or add address manually. Having trouble <u>Learn How</u> to import orders or <u>download</u> our sample Excel file.</p>
+                    <p>You can import orders from your Excel, CSV and tab-delimited file or add address manually. Having
+                        trouble <u>Learn How</u> to import orders or <u>download</u> our sample Excel file.</p>
                     <div class="upload-container">
                         <p style="font-size: 14px; font-weight: 500;">Upload File</p>
                         <div class="upload-content" ondrop="onDropHandler(event)">
@@ -420,7 +423,15 @@
             </div>
         </div>
     </div>
-
+    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+        <div class="shrink-0">
+            <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo">
+        </div>
+        <div>
+            <div class="text-xl font-medium text-black">ChitChat</div>
+            <p class="text-slate-500">You have a new message!</p>
+        </div>
+    </div>
     <script src='./dist/main.bundle.js'></script>
 </body>
 

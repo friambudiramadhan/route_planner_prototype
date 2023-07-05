@@ -1,4 +1,4 @@
-import "./style.css"
+// import "./style.css"
 import BottomTable from "./bottom-table"
 import Modal from './modal'
 import moment from 'moment'
