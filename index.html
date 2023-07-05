@@ -12,11 +12,16 @@
     <!-- ================================= header start ============================ -->
     <div class="header flex justify-between items-center px-3 h-[50px] bg-grey-200 border-b border-b-grey-300">
         <div class="bg-grey-300 flex p-1 rounded-full" style="box-shadow: inset 0 3px 4px #b4b4b4;">
-            <button type="button" id="btn_swicth_route_and_plan" class="font-semibold rounded-full px-3 py-0.5 [&.active]:bg-blue-500 text-grey-100 text-xs h-7 active" title="Route & Plan">Route &
+            <button type="button" id="btn_swicth_route_and_plan"
+                class="font-semibold rounded-full px-3 py-0.5 [&.active]:bg-blue-500 text-grey-100 text-xs h-7 active"
+                title="Route & Plan">Route &
                 Plan</button>
-            <button type="button" id="btn_swicth_live_mode" class="font-semibold rounded-full px-3 py-0.5 [&.active]:bg-blue-500 text-grey-100 text-xs h-7" title="Live Mode">Live Mode</button>
+            <button type="button" id="btn_swicth_live_mode"
+                class="font-semibold rounded-full px-3 py-0.5 [&.active]:bg-blue-500 text-grey-100 text-xs h-7"
+                title="Live Mode">Live Mode</button>
         </div>
-        <div class="header-logo w-32 flex flex-col items-center bg-grey-300 py-2 px-2 rounded-full" style="box-shadow: inset 0 3px 4px #b4b4b4;">
+        <div class="header-logo w-32 flex flex-col items-center bg-grey-300 py-2 px-2 rounded-full"
+            style="box-shadow: inset 0 3px 4px #b4b4b4;">
             <img src="./assets/images/easygo-logo.png" alt="EasyGo Logo" width="90">
         </div>
         <div class="header-profile">
@@ -26,226 +31,300 @@
     <!-- ================================= header end ============================ -->
 
     <div class="main-body flex h-[calc(100vh-50px)]">
-        <div id="sidebar" class="bg-grey-100 min-w-[340px] border-r border-grey-300 text-grey-600">
-            <div class="p-[10px] flex items-center justify-between">
-                <div class="">
-                    <h2 class="text-xl font-bold">Kota Bandung</h2>
-                    <p class="text-sm">RUNSHEET123</p>
-                </div>
-                <button>
-                    <img src="./assets/icons/gear.svg" alt="">
-                </button>
-            </div>
-            <div>
-                <div class="bg-blue-100">
-                    <div class="sidebar-section__content">
-                        <input type="checkbox">
-                        <img src="./assets/icons/lock.svg" alt="">
-                        <span>Runsheet</span>
+        <div id="sidebar" class="bg-grey-100 min-w-[340px] border-r border-grey-300 text-grey-500 relative">
+            <div class="p-2.5 text-grey-700">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <h2 class="text-xl font-bold">Kota Bandung</h2>
+                        <p class="text-sm mb-3 font-medium">RUNSHEET123</p>
                     </div>
-                    <div class="sidebar-section__tooltip">
+                    <button>
+                        <img src="./assets/icons/gear.svg" alt="">
+                    </button>
+                </div>
+                <p class="text-sm">Start Time 07:00 Am</p>
+                <p class="text-sm mb-2">117 of 199 trips routed</p>
+                <div class="w-full bg-grey-300 rounded-full">
+                    <div class="bg-green-500 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                        style="width: 95%">
+                        95%
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================= run sheet list start ====================== -->
+            <div class="flex items-center justify-between h-9 p-2.5 bg-blue-100 text-xs border-y border-grey-300 text-grey-500">
+                <div class="flex items-center gap-x-1">
+                    <p>Runsheet List (4)</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <!-- <button class="flex items-center gap-1">
+                        <img src="./assets/icons/gear.svg" alt="" width="16">
+                        <span>Setting</span>
+                    </button> -->
+                    <button class="flex items-center gap-1">
+                        <img src="./assets/icons/add-button.svg" alt="" width="16">
+                        <span>Add</span>
+                    </button>
+                </div>
+            </div>
+            <div id="runsheet-list" class="text-xs">
+                <div class="flex justify-between p-2.5">
+                    <div class="flex items-center gap-2">
+                        <p>Kota Bandung</p>
+                        <span>•</span>
+                        <p>BT123</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
                         <button>
-                            <img src="./assets/icons/gear.svg" alt="" width="16">
-                            <span>Setting</span>
+                            <img src="./assets/icons/pencil.svg" alt="" width="14">
                         </button>
-                        <button class="btn-add">
-                            <img src="./assets/icons/add-button.svg" alt="" width="16">
-                            <span>Add</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="sidebar-section-item">
-                    <div class="sidebar-section-list-item">
-                        <div class="sidebar-section__content">
-                            <input type="checkbox">
-                            <img src="./assets/icons/lock.svg" alt="">
-                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
-                        </div>
-                        <div class="sidebar-section__tooltip">
-                            <button>
-                                <img src="./assets/icons/pencil.svg" alt="" width="14">
-                            </button>
-                            <button>
-                                <img src="./assets/icons/trash.svg" alt="" width="14">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="sidebar-section-list-item">
-                        <div class="sidebar-section__content">
-                            <input type="checkbox">
-                            <img src="./assets/icons/lock.svg" alt="">
-                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
-                        </div>
-                        <div class="sidebar-section__tooltip">
-                            <button>
-                                <img src="./assets/icons/pencil.svg" alt="" width="14">
-                            </button>
-                            <button>
-                                <img src="./assets/icons/trash.svg" alt="" width="14">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="sidebar-section-list-item">
-                        <div class="sidebar-section__content">
-                            <input type="checkbox">
-                            <img src="./assets/icons/lock.svg" alt="">
-                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
-                        </div>
-                        <div class="sidebar-section__tooltip">
-                            <button>
-                                <img src="./assets/icons/pencil.svg" alt="" width="14">
-                            </button>
-                            <button>
-                                <img src="./assets/icons/trash.svg" alt="" width="14">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="sidebar-section-list-item">
-                        <div class="sidebar-section__content">
-                            <input type="checkbox">
-                            <img src="./assets/icons/lock.svg" alt="">
-                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
-                        </div>
-                        <div class="sidebar-section__tooltip">
-                            <button>
-                                <img src="./assets/icons/pencil.svg" alt="" width="14">
-                            </button>
-                            <button>
-                                <img src="./assets/icons/trash.svg" alt="" width="14">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="sidebar-mode">
-                <button class="active">Car</button>
-                <button>Trip</button>
-            </div>
-            <div class="sidebar-section">
-                <div class="sidebar-section-header">
-                    <div class="sidebar-section__content">
-                        <input type="checkbox">
-                        <img src="./assets/icons/lock.svg" alt="">
-                        <span>Runsheet</span>
-                    </div>
-                    <div class="sidebar-section__tooltip">
                         <button>
-                            <img src="./assets/icons/gear.svg" alt="" width="16">
-                            <span>Setting</span>
+                            <img src="./assets/icons/trash.svg" alt="" width="14">
                         </button>
-                        <button class="btn-add">
-                            <img src="./assets/icons/add-button.svg" alt="" width="16">
-                            <span>Add</span>
+                        <button>
+                            <img src="./assets/icons/view.svg" alt="" width="14">
                         </button>
                     </div>
                 </div>
-                <div class="sidebar-section-item">
-                    <div class="sidebar-section-list-item">
-                        <div class="sidebar-section__content">
-                            <input type="checkbox">
-                            <img src="./assets/icons/lock.svg" alt="">
-                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                <div class="flex justify-between p-2.5">
+                    <div class="flex items-center gap-2">
+                        <p>Bandung Timur</p>
+                        <span>•</span>
+                        <p class="">BT123</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <button>
+                            <img src="./assets/icons/pencil.svg" alt="" width="14">
+                        </button>
+                        <button>
+                            <img src="./assets/icons/trash.svg" alt="" width="14">
+                        </button>
+                        <button>
+                            <img src="./assets/icons/view.svg" alt="" width="14">
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-between p-2.5">
+                    <div class="flex items-center gap-2">
+                        <p>Rancaekek</p>
+                        <span>•</span>
+                        <p>RCN3231</p>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <button>
+                            <img src="./assets/icons/pencil.svg" alt="" width="14">
+                        </button>
+                        <button>
+                            <img src="./assets/icons/trash.svg" alt="" width="14">
+                        </button>
+                        <button>
+                            <img src="./assets/icons/view.svg" alt="" width="14">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- ========================= run sheet list end ====================== -->
+
+            <!-- ========================= button trip and car start ====================== -->
+            <div class="flex items-center justify-around h-12 border-t border-grey-300 p2.5">
+                <button
+                    class="w-40 h-8 rounded-lg text-sm font-bold [&.active]:text-grey-100 [&.active]:bg-blue-500 active">Car</button>
+                <button
+                    class="w-40 h-8 rounded-lg text-sm font-bold [&.active]:text-grey-100 [&.active]:bg-blue-500">Trip</button>
+            </div>
+            <!-- ========================= button trip and car start ====================== -->
+
+            <!-- ========================= list car and trip start====================== -->
+            <div class="flex items-center justify-between h-9 p-2.5 bg-blue-100 text-xs border-y border-grey-300">
+                <div class="flex items-center gap-x-1">
+                    <p>Car (9) 5 of 9 used</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <button class="flex items-center gap-1">
+                        <img src="./assets/icons/add-button.svg" alt="" width="16">
+                        <span>Add</span>
+                    </button>
+                </div>
+            </div>
+            <div id="car-and-trip-list">
+                <div id="car-list" class="text-xs [&.hide]:hidden">
+                    <div class="flex justify-between p-2.5">
+                        <div class="flex items-center gap-2">
+                            <p>B 9012 EF</p>
+                            <span>•</span>
+                            <p>Hino Dutro</p>
                         </div>
-                        <div class="sidebar-section__tooltip">
+                        <div class="flex gap-2 items-center">
+                            <p class="text-green-600">Allocated</p>
                             <button>
                                 <img src="./assets/icons/pencil.svg" alt="" width="14">
                             </button>
                             <button>
                                 <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/view.svg" alt="" width="14">
                             </button>
                         </div>
                     </div>
-                    <div class="sidebar-section-list-item">
-                        <div class="sidebar-section__content">
-                            <input type="checkbox">
-                            <img src="./assets/icons/lock.svg" alt="">
-                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                    <div class="flex justify-between p-2.5">
+                        <div class="flex items-center gap-2">
+                            <p>B 3456 GH</p>
+                            <span>•</span>
+                            <p class="">Toyota Dyna</p>
                         </div>
-                        <div class="sidebar-section__tooltip">
+                        <div class="flex gap-2 items-center">
+                            <p class="text-red-600">Unallocated</p>
                             <button>
                                 <img src="./assets/icons/pencil.svg" alt="" width="14">
                             </button>
                             <button>
                                 <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/view.svg" alt="" width="14">
                             </button>
                         </div>
                     </div>
-                    <div class="sidebar-section-list-item">
-                        <div class="sidebar-section__content">
-                            <input type="checkbox">
-                            <img src="./assets/icons/lock.svg" alt="">
-                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                    <div class="flex justify-between p-2.5">
+                        <div class="flex items-center gap-2">
+                            <p>B 7890 IJ</p>
+                            <span>•</span>
+                            <p>Gran Max</p>
                         </div>
-                        <div class="sidebar-section__tooltip">
+                        <div class="flex gap-2 items-center">
+                            <p class="text-green-600">Allocated</p>
                             <button>
                                 <img src="./assets/icons/pencil.svg" alt="" width="14">
                             </button>
                             <button>
                                 <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/view.svg" alt="" width="14">
                             </button>
                         </div>
                     </div>
-                    <div class="sidebar-section-list-item">
-                        <div class="sidebar-section__content">
-                            <input type="checkbox">
-                            <img src="./assets/icons/lock.svg" alt="">
-                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                    <div class="flex justify-between p-2.5">
+                        <div class="flex items-center gap-2">
+                            <p>B 9012 EF</p>
+                            <span>•</span>
+                            <p>Hino Dutro</p>
                         </div>
-                        <div class="sidebar-section__tooltip">
+                        <div class="flex gap-2 items-center">
+                            <p class="text-green-600">Allocated</p>
                             <button>
                                 <img src="./assets/icons/pencil.svg" alt="" width="14">
                             </button>
                             <button>
                                 <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/view.svg" alt="" width="14">
                             </button>
                         </div>
                     </div>
-                    <div class="sidebar-section-list-item">
-                        <div class="sidebar-section__content">
-                            <input type="checkbox">
-                            <img src="./assets/icons/lock.svg" alt="">
-                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                    <div class="flex justify-between p-2.5">
+                        <div class="flex items-center gap-2">
+                            <p>B 3456 GH</p>
+                            <span>•</span>
+                            <p class="">Toyota Dyna</p>
                         </div>
-                        <div class="sidebar-section__tooltip">
+                        <div class="flex gap-2 items-center">
+                            <p class="text-red-600">Unallocated</p>
                             <button>
                                 <img src="./assets/icons/pencil.svg" alt="" width="14">
                             </button>
                             <button>
                                 <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/view.svg" alt="" width="14">
                             </button>
                         </div>
                     </div>
-                    <div class="sidebar-section-list-item">
-                        <div class="sidebar-section__content">
-                            <input type="checkbox">
-                            <img src="./assets/icons/lock.svg" alt="">
-                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                    <div class="flex justify-between p-2.5">
+                        <div class="flex items-center gap-2">
+                            <p>B 7890 IJ</p>
+                            <span>•</span>
+                            <p>Gran Max</p>
                         </div>
-                        <div class="sidebar-section__tooltip">
+                        <div class="flex gap-2 items-center">
+                            <p class="text-green-600">Allocated</p>
                             <button>
                                 <img src="./assets/icons/pencil.svg" alt="" width="14">
                             </button>
                             <button>
                                 <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/view.svg" alt="" width="14">
                             </button>
                         </div>
                     </div>
-                    <div class="sidebar-section-list-item">
-                        <div class="sidebar-section__content">
-                            <input type="checkbox">
-                            <img src="./assets/icons/lock.svg" alt="">
-                            <span>Kota Bandung&nbsp;&nbsp;•&nbsp;&nbsp;RUNSHEET123</span>
+                    <div class="flex justify-between p-2.5">
+                        <div class="flex items-center gap-2">
+                            <p>B 9012 EF</p>
+                            <span>•</span>
+                            <p>Hino Dutro</p>
                         </div>
-                        <div class="sidebar-section__tooltip">
+                        <div class="flex gap-2 items-center">
+                            <p class="text-green-600">Allocated</p>
                             <button>
                                 <img src="./assets/icons/pencil.svg" alt="" width="14">
                             </button>
                             <button>
                                 <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/view.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-2.5">
+                        <div class="flex items-center gap-2">
+                            <p>B 3456 GH</p>
+                            <span>•</span>
+                            <p class="">Toyota Dyna</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <p class="text-red-600">Unallocated</p>
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/view.svg" alt="" width="14">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-2.5">
+                        <div class="flex items-center gap-2">
+                            <p>B 7890 IJ</p>
+                            <span>•</span>
+                            <p>Gran Max</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <p class="text-green-600">Allocated</p>
+                            <button>
+                                <img src="./assets/icons/pencil.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/trash.svg" alt="" width="14">
+                            </button>
+                            <button>
+                                <img src="./assets/icons/view.svg" alt="" width="14">
                             </button>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="sidebar-buttons"
+                class="bg-blue-500 h-11 w-full absolute bottom-0 left-0 flex flex-col items-center">
+                <button class="text-grey-100 font-bold text-lg w-full h-full">Run !</button>
             </div>
         </div>
         <div class="main">
