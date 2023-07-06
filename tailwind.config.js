@@ -29,7 +29,12 @@ module.exports = {
       green: colors.green,
       red: colors.red
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'primary': "Galano Grotesque",
+        'bebas-neue': 'Bebas Neue'
+      }
+    },
   },
   plugins: [],
 }

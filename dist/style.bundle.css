@@ -423,7 +423,7 @@ video {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Galano Grotesque", sans-serif;
 }
 
 *, ::before, ::after {
@@ -542,9 +542,17 @@ html {
   left: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.-mb-1 {
+  margin-bottom: -0.25rem;
 }
 
 .mb-2 {
@@ -557,6 +565,10 @@ html {
 
 .flex {
   display: flex;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-11 {
@@ -587,8 +599,20 @@ html {
   height: calc(100vh - 50px);
 }
 
+.h-\[calc\(100vh-80px\)\] {
+  height: calc(100vh - 80px);
+}
+
 .h-full {
   height: 100%;
+}
+
+.min-h-\[calc\(100vh-78px\)\] {
+  min-height: calc(100vh - 78px);
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-12 {
@@ -611,6 +635,30 @@ html {
   min-width: 340px;
 }
 
+.min-w-\[40px\] {
+  min-width: 40px;
+}
+
+.min-w-\[89px\] {
+  min-width: 89px;
+}
+
+.min-w-\[calc\(100\%-340px\)\] {
+  min-width: calc(100% - 340px);
+}
+
+.min-w-\[calc\(100vw-340px\)\] {
+  min-width: calc(100vw - 340px);
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.max-w-\[calc\(100vw\)\] {
+  max-width: calc(100vw);
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
@@ -625,6 +673,10 @@ html {
 
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -662,6 +714,14 @@ html {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -670,8 +730,21 @@ html {
   border-radius: 0.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-x {
+  border-left-width: 1px;
+  border-right-width: 1px;
 }
 
 .border-y {
@@ -731,6 +804,21 @@ html {
   background-color: rgb(223 223 223 / var(--tw-bg-opacity));
 }
 
+.bg-grey-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(169 168 168 / var(--tw-bg-opacity));
+}
+
+.bg-grey-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(91 91 91 / var(--tw-bg-opacity));
+}
+
+.bg-teal-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 202 167 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -765,6 +853,11 @@ html {
   padding-right: 0.5rem;
 }
 
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -780,6 +873,11 @@ html {
   padding-bottom: 0.125rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -787,6 +885,10 @@ html {
 
 .text-center {
   text-align: center;
+}
+
+.font-bebas-neue {
+  font-family: Bebas Neue;
 }
 
 .text-lg {
@@ -811,6 +913,10 @@ html {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .font-medium {
@@ -867,9 +973,93 @@ html {
 }
 
 @font-face {
-  font-family: 'Galano Grotesque Alt';
+  font-family: "Galano Grotesque";
 
-  src: url('../assets/fonts/Galano\ Grotesque.woff') format('woff');
+  src: url('../assets/fonts/Galano Grotesque Alt Thin.woff');
+
+  font-weight: 100;
+
+  ascent-override: 90%;
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+
+  src: url('../assets/fonts/Galano Grotesque Alt Light.woff');
+
+  font-weight: 300;
+
+  ascent-override: 90%;
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+
+  src: url("../assets/fonts/Galano Grotesque Alt.woff");
+
+  font-weight: 400;
+
+  ascent-override: 90%;
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+
+  src: url('../assets/fonts/Galano Grotesque Alt Medium.woff');
+
+  font-weight: 500;
+
+  ascent-override: 90%;
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+
+  src: url('../assets/fonts/Galano Grotesque Alt Semi Bold.woff');
+
+  font-weight: 600;
+
+  ascent-override: 90%;
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+
+  src: url('../assets/fonts/Galano Grotesque Alt Bold.woff');
+
+  font-weight: 700;
+
+  ascent-override: 90%;
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+
+  src: url('../assets/fonts/Galano Grotesque Alt Extra Bold.woff');
+
+  font-weight: 800;
+
+  ascent-override: 90%;
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+
+  src: url('../assets/fonts/Galano Grotesque Alt Black.woff');
+
+  font-weight: 900;
+
+  ascent-override: 90%;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+
+  src: url('../assets/fonts/BebasNeue-Regular.ttf');
+
+  font-weight: 400;
+
+  /* ascent-override: 90%; */
 }
 
 .\[\&\.active\]\:bg-blue-500.active {
@@ -882,6 +1072,31 @@ html {
   color: rgb(249 250 255 / var(--tw-text-opacity));
 }
 
+.\[\&\.active\]\:text-teal-200.active {
+  --tw-text-opacity: 1;
+  color: rgb(0 202 167 / var(--tw-text-opacity));
+}
+
+.\[\&\.fullscreen\]\:min-h-\[100vh\].fullscreen {
+  min-height: 100vh;
+}
+
+.\[\&\.fullscreen\]\:min-w-full.fullscreen {
+  min-width: 100%;
+}
+
 .\[\&\.hide\]\:hidden.hide {
   display: none;
+}
+
+.\[\&\.large\]\:max-h-\[calc\(100vh-30\%\)\].large {
+  max-height: calc(100vh - 30%);
+}
+
+.\[\&\.medium\]\:max-h-\[240px\].medium {
+  max-height: 240px;
+}
+
+.\[\&\.small\]\:max-h-\[80px\].small {
+  max-height: 80px;
 }
